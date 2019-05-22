@@ -1,13 +1,16 @@
-lista = [1, 2.5, 'DevCode', [5,6] ,4]
-for element in lista:
-    print(element)
+def suma(num1, num2):
+    return num1 +num2
 
+def resta(num1, num2):
+    if(num1<num2):
+        return num2-num1
+    else: return num1-num2
 
-n1 = int(input("Ingrese primer numero: "))
-n2 = int(input("Ingrese segundo numero: "))
-if n1 < n2:
-	for i in range(n1+1,n2):
-		print (i)
+def potencia(num1, pot):
+    return num1**pot
 
-
-pow(2, 3)
+def division(num1, num2):
+    if(num2 != 0):
+        return num1/num2;
+    else:
+        return 'indefinido'
